@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Асық Ату: Табан</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="app">
+  <header>
+    <h1>АСЫҚ АТУ <span>ТАБАН</span></h1>
+    <nav>
+      <button id="bNew">Новая игра</button>
+      <button id="bTrain">Обучение</button>
+      <button id="bShop">Магазин</button>
+      <button id="bSnd" aria-label="Звук">🔊</button>
+    </nav>
+  </header>
+  <section id="stage">
+    <div id="wrap">
+      <canvas id="cv" width="1000" height="750"></canvas>
+      <div id="hint" class="hidden"></div>
+      <div id="turn"><small>ХОД</small><b id="hTurn">1</b><small id="tStat"></small></div>
+      <div id="sak"><small>САКА</small><b id="sName">Қой</b><span>Масса: <i id="sMass">1.0</i> · Отскок: <i id="sRest">60%</i></span></div>
+      <div id="power"><small>СИЛА</small><div><i id="pf"></i></div></div>
+    </div>
+  </section>
+</main>
+<div id="modal" class="hidden"><div class="card" id="mc"></div></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
